@@ -1,4 +1,7 @@
-export function init() {
+import { formToXhr } from 'common/xhr';
+
+function init() {
+  formToXhr
   $('div.captcha').each(function(this: HTMLElement) {
     $(this).siblings('input[name="gameId"]').val('p6neMKIz');
     $(this).replaceWith('<input type="hidden" name="move" value="5 4" />');
